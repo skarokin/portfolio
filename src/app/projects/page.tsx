@@ -14,20 +14,20 @@ export default function Projects() {
         <div className="grid grid-cols-3 gap-4 mt-20">
           <div className="">
             <div className="flex flex-col items-center">
-              <img src="carbon_linearregression.png" alt="Linear Regression" className="w-full h-auto mb-4" />
+              <img src="./carbon_linearregression.png" alt="Linear Regression" className="w-full h-auto mb-4" />
               <a href="https://github.com/skarokin/crispy-system" className="text-mainColor text-xl mb-2 hover:underline hover:text-mainColor block text-center">
                 Linear Regression
               </a>
               <p className="text-slate-500 font-bold mb-2">Java</p>
             </div>
             <ul className="list-disc pl-10 text-slate-500 text-base mb-2">
-              <li>A linear regression calculator made in Java for Rutgers' UHACCS Hackathon, placed 4th</li>
+              <li>A linear regression calculator made in Java for Rutgers&apos; UHACCS Hackathon, placed 4th</li>
               <li>My first project!</li>
             </ul>
           </div>
           <div className="">
             <div className="flex flex-col items-center">
-              <img src="/carbon_mynotemd.png" alt="MYnote.md" className="w-full h-auto mb-4" />
+              <img src="./carbon_mynotemd.png" alt="MYnote.md" className="w-full h-auto mb-4" />
               <a href="https://github.com/skarokin/MYnote.md" className="text-mainColor text-xl mb-2 hover:underline hover:text-mainColor block text-center">
                 MYnote.md
               </a>
@@ -40,7 +40,7 @@ export default function Projects() {
           </div>
           <div className="">
             <div className="flex flex-col items-center">
-              <img src="/carbon_reftype.png" alt="ref:type" className="w-full h-auto mb-4" />
+              <img src="./carbon_reftype.png" alt="ref:type" className="w-full h-auto mb-4" />
               <a href="https://github.com/skarokin/reftype" className="text-mainColor text-xl mb-2 hover:underline hover:text-mainColor block text-center">
                 ref:type
               </a>
@@ -53,7 +53,7 @@ export default function Projects() {
           </div>
           <div className="">
             <div className="flex flex-col items-center">
-              <img src="/carbon_pycaptcha.png" alt="pycaptcha" className="w-full h-auto mb-4" />
+              <img src="./carbon_pycaptcha.png" alt="pycaptcha" className="w-full h-auto mb-4" />
               <a href="https://github.com/skarokin/pycaptcha" className="text-mainColor text-xl mb-2 hover:underline hover:text-mainColor block text-center">
                 pycaptcha
               </a>
@@ -66,7 +66,7 @@ export default function Projects() {
           </div>
           <div className="">
             <div className="flex flex-col items-center">
-              <img src="/carbon_pyesl.png" alt="pyesl" className="w-full h-auto mb-4" />
+              <img src="./carbon_pyesl.png" alt="pyesl" className="w-full h-auto mb-4" />
               <a href="https://github.com/skarokin/pyesl" className="text-mainColor text-xl mb-2 hover:underline hover:text-mainColor block text-center">
                 pyesl
               </a>
