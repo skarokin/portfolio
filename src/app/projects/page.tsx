@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 import Section from '../section';
+import Image from 'next/image';
 
 const Header = dynamic(() => import('../header'), { ssr: false });
 
@@ -14,7 +15,7 @@ export default function Projects() {
         <div className="grid grid-cols-3 gap-4 mt-20">
           <div className="">
             <div className="flex flex-col items-center">
-              <img src="./carbon_linearregression.png" alt="Linear Regression" className="w-full h-auto mb-4" />
+              <Image src="/carbon_linearregression.png" alt="Linear Regression" width={400} height={300} className="w-full h-auto mb-4" />
               <a href="https://github.com/skarokin/crispy-system" className="text-mainColor text-xl mb-2 hover:underline hover:text-mainColor block text-center">
                 Linear Regression
               </a>
@@ -27,7 +28,7 @@ export default function Projects() {
           </div>
           <div className="">
             <div className="flex flex-col items-center">
-              <img src="./carbon_mynotemd.png" alt="MYnote.md" className="w-full h-auto mb-4" />
+              <Image src="/carbon_mynotemd.png" alt="MYnote.md" width={400} height={300} className="w-full h-auto mb-4" />
               <a href="https://github.com/skarokin/MYnote.md" className="text-mainColor text-xl mb-2 hover:underline hover:text-mainColor block text-center">
                 MYnote.md
               </a>
@@ -40,7 +41,7 @@ export default function Projects() {
           </div>
           <div className="">
             <div className="flex flex-col items-center">
-              <img src="./carbon_reftype.png" alt="ref:type" className="w-full h-auto mb-4" />
+              <Image src="/carbon_reftype.png" alt="ref:type" width={400} height={300} className="w-full h-auto mb-4" />
               <a href="https://github.com/skarokin/reftype" className="text-mainColor text-xl mb-2 hover:underline hover:text-mainColor block text-center">
                 ref:type
               </a>
@@ -53,7 +54,7 @@ export default function Projects() {
           </div>
           <div className="">
             <div className="flex flex-col items-center">
-              <img src="./carbon_pycaptcha.png" alt="pycaptcha" className="w-full h-auto mb-4" />
+              <Image src="/carbon_pycaptcha.png" alt="pycaptcha" width={400} height={300} className="w-full h-auto mb-4" />
               <a href="https://github.com/skarokin/pycaptcha" className="text-mainColor text-xl mb-2 hover:underline hover:text-mainColor block text-center">
                 pycaptcha
               </a>
@@ -66,7 +67,7 @@ export default function Projects() {
           </div>
           <div className="">
             <div className="flex flex-col items-center">
-              <img src="./carbon_pyesl.png" alt="pyesl" className="w-full h-auto mb-4" />
+              <Image src="/carbon_pyesl.png" alt="pyesl" width={400} height={300} className="w-full h-auto mb-4" />
               <a href="https://github.com/skarokin/pyesl" className="text-mainColor text-xl mb-2 hover:underline hover:text-mainColor block text-center">
                 pyesl
               </a>
