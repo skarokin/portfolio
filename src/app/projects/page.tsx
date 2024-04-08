@@ -79,7 +79,7 @@ export default function Projects() {
                     <a href="https://mmozgovoy.dev/papers/mozgovoy11b.pdf" className="text-mainColor hover:underline hover:text-mainColor">
                         This 
                     </a>{" "}
-                    research paper was very helpful, and the researcher was very kind to help me understand it
+                    research paper was very helpful, and the researcher kindly helped me when I reached out to him
                 </li>
             </ul>
           </div>
