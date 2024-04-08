@@ -11,7 +11,7 @@ export default function Home() {
       <section id="home" className={`${true ? 'bg-bgColor' : 'bg-bgColorLight'} flex min-h-screen flex-col items-left justify-center p-24 w-8/12`}>
       <div className="">
         <div className="flex items-center justify-center mb-8">
-          <Image src="/portfoliosean.png" alt="portfoliosean" width={400} height={300} className="w-64 h-auto rounded-full border-2"/>
+          <Image src="./portfoliosean.png" alt="portfoliosean" width={400} height={300} className="w-64 h-auto rounded-full border-2"/>
         </div>
         <Contacts />
         <div className="mb-2">

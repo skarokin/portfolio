@@ -13,7 +13,7 @@ export default function Resume() {
                 </div>
                 <div className="flex justify-center w-full mt-24">
                     <iframe
-                        src="/resume.pdf"
+                        src="./resume.pdf"
                         width="100%"
                         height="1000px"
                         loading="lazy"
