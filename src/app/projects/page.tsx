@@ -45,10 +45,10 @@ export default function Projects() {
               <a href="https://github.com/skarokin/reftype" className="text-mainColor text-xl mb-2 hover:underline hover:text-mainColor block text-center">
                 ref:type
               </a>
-              <p className="text-slate-500 font-bold mb-2">TypeScript, React, Node, Firebase</p>
+              <p className="text-slate-500 font-bold mb-2">TypeScript, React, Node, GCP</p>
             </div>
             <ul className="list-disc pl-10 text-slate-500 text-base mb-2">
-              <li>A competitive typing game made with React and Node with real-time leaderboard</li>
+              <li>A competitive typing game made with React and Node with a real-time leaderboard</li>
               <li>My first full-stack project</li>
             </ul>
           </div>
@@ -69,7 +69,7 @@ export default function Projects() {
             <div className="flex flex-col items-center">
               <Image src="./carbon_pyesl.png" alt="pyesl" width={400} height={300} className="w-full h-auto mb-4" />
               <a href="https://github.com/skarokin/pyesl" className="text-mainColor text-xl mb-2 hover:underline hover:text-mainColor block text-center">
-                pyesl
+                pyesl (wip)
               </a>
               <p className="text-slate-500 font-bold mb-2">Python, spaCy, Pandas, Firebase</p>
             </div>
@@ -79,7 +79,7 @@ export default function Projects() {
                     <a href="https://mmozgovoy.dev/papers/mozgovoy11b.pdf" className="text-mainColor hover:underline hover:text-mainColor">
                         This 
                     </a>{" "}
-                    research paper was very helpful, and the researcher kindly helped me when I reached out to him
+                    research paper (and the researcher himself) was very helpful
                 </li>
             </ul>
           </div>
