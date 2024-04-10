@@ -54,6 +54,7 @@ export default function About() {
                     <h1 className="text-mainColor text-xl mb-2 mt-8">Fun (i guess) Facts</h1>
                         <ul className="list-disc pl-10 text-slate-500 text-base mb-2">
                             <li>I love animanga, am the IGL for a Valorant team, and help coach my high school&apos;s Esports team</li>
+                            <li>I love typing. 210 WPM on 15s test (78th global) and 177 WPM on 60s (129th global)</li>
                             <li>I&apos;ve done 7 coast-to-coast road trips and have visited almost every major national park</li>
                             <li>I lived in Oregon from 2018-2019</li>
                             <li>In 2018, I heard an Aimer song for the first time in an anime ending. She&apos;s been my favorite artist ever since</li>
