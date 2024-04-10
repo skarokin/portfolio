@@ -36,8 +36,8 @@ export default function About() {
                                 <ul className="list-disc pl-10 text-slate-500 text-base mb-2">
                                 <li>On March 24, 2024 at 11:59 PM, my free trial for Google Cloud Platform ran out... unfortunately that meant the end of deployment :(</li>
                                 </ul>
-                            <li>Built an object detection based CAPTCHA system by training my own YOLOv4-tiny model. Made a training pipeline to augment a given dataset to train YOLOv4-tiny</li>
                             <li>Took Computer Architecture, Discrete Structures II, and Linear Programming</li>
+                            <li>Built an object detection based CAPTCHA system by training my own YOLOv4-tiny model. Made a training pipeline to augment a given dataset to train YOLOv4-tiny</li>
                         </ul>
                         <p className="text-slate-500 text-base mb-2">
                         &nbsp; 2024:
