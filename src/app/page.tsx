@@ -26,8 +26,8 @@ export default function Home() {
         <div className="mb-8">
           <p className="text-slate-500 text-base mb-2">
             &nbsp;Hi, my name is Sean! I&apos;m pursuing a bachelor&apos;s in computer science at Rutgers University. <br/>
-            &nbsp;I have experience in full-stack development, data science, and machine learning. <br/>
-            &nbsp;My 2024 research objectives include natural language processing, computer vision, and compiler design.<br/><br/>
+            &nbsp;I have experience in full-stack development, data science, and ML engineering. <br/>
+            &nbsp;My 2024 research objectives include natural language processing and compiler design. <br/><br/>
 
             &nbsp;If you&apos;re a recruiter, hi! I&apos;m open to internship positions. Feel free to take a look at my resume and contact me! <br/>
             &nbsp;If you&apos;re a student, hi! I&apos;m open for collaboration, or just to chat.

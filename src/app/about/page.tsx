@@ -44,10 +44,12 @@ export default function About() {
                         </p>
                         <ul className="list-disc pl-10 text-slate-500 text-base mb-2">
                             <li>Took Design and Analysis of Computer Algorithms, Data Management with Python, and Databases</li>
+                            <li>Did 3 months of research on POS tagging and dependency parsing. Attempted to create a HMM POS tagger from scratch and a shift-reduce dependency parser from scratch... miserably failed both</li>
                             <li>Developed a grammar checker by combining spaCy&apos;s dependency parser with rule-based systems. 
                                 Created training pipelines for spaCy&apos;s POS tagger and dependency parser to enable custom grammar rules and multi-language support</li>
                             <ul className="list-disc pl-10 text-slate-500 text-base mb-2">
                                 <li>Worked with two friends on this; led all parts of the research and development process</li>
+                                
                             </ul>
                             <li>Made this portfolio website you&apos;re looking at right now with Next.js</li>
                         </ul>
