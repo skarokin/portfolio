@@ -126,10 +126,10 @@ export default function Projects() {
                 className="w-full h-auto mb-4 md:w-full md:h-auto"
               />
               <a
-                href="https://github.com/skarokin/pyesl"
+                href="https://github.com/skarokin/depparse-grammar"
                 className="text-mainColor text-lg md:text-xl mb-2 hover:underline hover:text-mainColor block text-center"
               >
-                pyesl (wip)
+                depparse-grammar
               </a>
               <p className="text-slate-500 font-bold mb-2">spaCy, Pandas, Firebase</p>
             </div>
@@ -145,7 +145,7 @@ export default function Projects() {
                 >
                   This
                 </a>{' '}
-                research paper (and the researcher himself) was extremely useful
+                research paper (and the researcher himself) was extremely helpful
               </li>
             </ul>
           </div>

@@ -42,7 +42,7 @@ export default function Home() {
             processing and compiler design. <br />
             <br />
             &nbsp;If you&apos;re a recruiter, hi! I&apos;m open to internship
-            positions. Feel free to take a look at my resume and contact me!{' '}
+            positions. Feel free to take a look at my resume and contact me.
             <br />
             &nbsp;If you&apos;re a student, hi! I&apos;m open for collaboration,
             or just to chat.
