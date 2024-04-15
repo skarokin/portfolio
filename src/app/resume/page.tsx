@@ -25,7 +25,7 @@ export default function Resume() {
         <div className="absolute top-32 flex items-baseline">
           <Section title="Resume" />
           <div className="ml-4 flex flex-col items-center">
-            <a href="./resume.pdf" className="text-slate-500 transition-colors duration-300 ease-in-out fill-current hover:text-mainColor">
+            <a href="https://docs.google.com/document/d/1ZN6fzOB1hM_DZ0hx0Q8nPTXasOPXdar-b_pZh_5av48/export?format=pdf" className="text-slate-500 transition-colors duration-300 ease-in-out fill-current hover:text-mainColor">
               <FontAwesomeIcon icon={faCloudArrowDown} className="w-6"/>
             </a>
           </div>
