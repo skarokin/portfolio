@@ -14,12 +14,12 @@ export default function About() {
         <div className="absolute top-32">
           <Section title="About Me" />
         </div>
-        <div className="relative mt-24">
+        <div className="pt-32 md:pt-20">
           <h1 className="text-mainColor text-lg md:text-xl mb-2">
             My Programming Journey
           </h1>
-          <p className="text-slate-500 text-sm md:text-base mb-2">
-            &nbsp; 2017:
+          <p className="pl-4 text-slate-500 text-sm md:text-base mb-2">
+            2017:
           </p>
           <ul className="list-disc pl-10 text-slate-500 text-sm md:text-base mb-2">
             <li>
@@ -27,8 +27,8 @@ export default function About() {
               up Eclipse and declared programming was too hard 😂
             </li>
           </ul>
-          <p className="text-slate-500 text-sm md:text-base mb-2">
-            &nbsp; 2022:
+          <p className="pl-4 text-slate-500 text-sm md:text-base mb-2">
+            2022:
           </p>
           <ul className="list-disc pl-10 text-slate-500 text-sm md:text-base mb-2">
             <li>
@@ -41,8 +41,8 @@ export default function About() {
               with algorithms and putting them into code
             </li>
           </ul>
-          <p className="text-slate-500 text-sm md:text-base mb-2">
-            &nbsp; 2023:
+          <p className="pl-4 text-slate-500 text-sm md:text-base mb-2">
+            2023:
           </p>
           <ul className="list-disc pl-10 text-slate-500 text-sm md:text-base mb-2">
             <li>Took DSA and Discrete Structures I</li>
@@ -69,8 +69,8 @@ export default function About() {
               YOLOv4-tiny model. Made a customizable image augmentation pipeline
             </li>
           </ul>
-          <p className="text-slate-500 text-sm md:text-base mb-2">
-            &nbsp; 2024:
+          <p className="pl-4 text-slate-500 text-sm md:text-base mb-2">
+            2024:
           </p>
           <ul className="list-disc pl-10 text-slate-500 text-sm md:text-base mb-2">
             <li>
@@ -97,7 +97,7 @@ export default function About() {
             <li>Made this portfolio website you&apos;re looking at right now with Next.js</li>
             <li>Took Intro to Deep Learning and Principles of Programming Languages</li>
           </ul>
-          <h1 className="text-mainColor text-lg md:text-xl mb-2 mt-8">
+          <h1 className="text-mainColor text-lg md:text-xl mb-2 mt-4">
             Fun (i guess) Facts
           </h1>
           <ul className="list-disc pl-10 text-slate-500 text-sm md:text-base mb-2">

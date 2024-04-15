@@ -19,7 +19,7 @@ export default function Home() {
               alt="portfoliosean"
               width={300}
               height={225}
-              className="w-48 h-auto rounded-full border-2 md:w-64 md:h-auto"
+              className="w-32 h-auto rounded-full border-2 md:w-48 md:h-auto"
             />
           </div>
           <Contacts />
@@ -28,23 +28,24 @@ export default function Home() {
               Sean Kim
             </h1>
             <h6 className="text-slate-500 text-lg md:text-xl">
-              Rutgers University-New Brunswick, 2026
+              Rutgers University - New Brunswick, 2026
             </h6>
           </div>
         </div>
-        <div className="mb-8">
-          <p className="text-slate-500 text-sm md:text-base mb-2">
-            &nbsp;Hi, my name is Sean! I&apos;m pursuing a bachelor&apos;s in
+        <div className="mb-2">
+          <p className="pl-4 text-slate-500 text-sm md:text-base mb-2">
+            Hi, my name is Sean! I&apos;m 20 years old and pursuing a bachelor&apos;s in
             computer science at Rutgers University. <br />
-            &nbsp;I have experience in full-stack development, data science, and
-            ML engineering. <br />
-            &nbsp;My 2024 research objectives include natural language
-            processing and compiler design. <br />
-            <br />
-            &nbsp;If you&apos;re a recruiter, hi! I&apos;m open to internship
-            positions. Feel free to take a look at my resume and contact me.
-            <br />
-            &nbsp;If you&apos;re a student, hi! I&apos;m open for collaboration,
+
+            I have experience in full-stack web development, data science, and machine/deep learning. <br />
+
+            My 2024 research objectives include natural language
+            processing and compiler design. <br /><br />
+
+            If you&apos;re a recruiter, hi! I&apos;m open to internship
+            positions. Feel free to take a look at my resume and contact me.<br />
+            
+            If you&apos;re a student, hi! I&apos;m open for collaboration,
             or just to chat.
           </p>
         </div>

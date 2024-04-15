@@ -15,7 +15,7 @@ export default function Projects() {
         <div className="absolute top-32">
           <Section title="Projects" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-32 md:pt-16">
           <div className="">
             <div className="flex flex-col items-center">
               <Image
