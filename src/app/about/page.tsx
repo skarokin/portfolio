@@ -15,7 +15,7 @@ export default function About() {
           <Section title="About Me" />
         </div>
         <div className="pt-32 md:pt-20">
-          <h1 className="text-mainColor text-lg md:text-xl mb-2">
+          <h1 className="text-xl md:text-2xl font-bold mb-2 text-mainColor">
             My Programming Journey
           </h1>
           <p className="pl-4 text-slate-500 text-sm md:text-base mb-2">
@@ -97,7 +97,7 @@ export default function About() {
             <li>Made this portfolio website you&apos;re looking at right now with Next.js</li>
             <li>Took Intro to Deep Learning and Principles of Programming Languages</li>
           </ul>
-          <h1 className="text-mainColor text-lg md:text-xl mb-2 mt-4">
+          <h1 className="text-xl md:text-2xl font-bold mb-2 text-mainColor mt-4">
             Fun (i guess) Facts
           </h1>
           <ul className="list-disc pl-10 text-slate-500 text-sm md:text-base mb-2">

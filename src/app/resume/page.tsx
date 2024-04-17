@@ -34,7 +34,7 @@ export default function Resume() {
           </div>
           <p className="ml-4 text-slate-500 text-sm">(Interested? Download the PDF! It has more info)</p>
         </div>
-        <div className="pt-32 md:pt-20 md:pt-20 pl-4 grid grid-rows-2 text-slate-500">
+        <div className="pt-32 md:pt-20 md:pt-20 grid grid-rows-2 text-slate-500">
           <div>
             <h2 className="text-xl md:text-2xl font-bold mb-2 text-mainColor">EDUCATION</h2>
             <div className="border-l-4 border-slate-500 pl-4">
