@@ -9,13 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "bgImg": "url('/bg.png')",
       },
       colors: {
         'bgColor': '#242933',
-        'hoverColor': "#f6f0e9",
         'mainColor': '#ec4c56',
       }
     },

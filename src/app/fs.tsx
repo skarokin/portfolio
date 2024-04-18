@@ -15,7 +15,7 @@ export default function FS({
     const [isProjectsOpen, setIsProjectsOpen] = useState<boolean>(true);
 
     return (
-        <div className="break-all min-h-fit min-w-16 md:w-64 border-2 border-slate-700 rounded py-2 px-4 mr-4 font-mono text-slate-300">
+        <div className="break-all bg-bgColor min-h-fit mb-8 w-64 border-2 border-slate-700 rounded py-2 px-4 mr-4 font-mono text-slate-300">
             <div onClick={() => setIsRootOpen(!isRootOpen)} className="flex flex-row items-center cursor-pointer">
                 <FontAwesomeIcon icon={isRootOpen ? faFolderOpen : faFolder} className="mr-2 w-4"/>
                 sean_kim
