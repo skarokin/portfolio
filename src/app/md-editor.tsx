@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { useState } from 'react';
-import markdownit from 'markdown-it';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode } from '@fortawesome/free-solid-svg-icons/faCode';
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons/faBookOpen';
