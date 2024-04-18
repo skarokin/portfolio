@@ -1,54 +1,37 @@
-import Contacts from './contacts';
-import dynamic from 'next/dynamic';
-import Image from 'next/image';
+'use client';
 
-const Header = dynamic(() => import('./header'), { ssr: false });
+import dynamic from 'next/dynamic';
+import { useState } from 'react';
+import contentMap from './contentMap';
+import { ReactNode } from 'react';
+
+const MDEditor = dynamic(() => import('./md-editor'), { ssr: false });
+const FS = dynamic(() => import('./fs'), { ssr: false });
 
 export default function Home() {
+
+  const [content, setContent] = useState<string>(contentMap['/readme.md'].content);
+  const [url, setUrl] = useState<string>(contentMap['/readme.md'].url);
+  const [children, setChildren] = useState<ReactNode>(contentMap['/readme.md'].children);
+  const [currentPage, setCurrentPage] = useState<string>('/readme.md');
+
+  const changePage = (newPage: string) => {
+    setCurrentPage(newPage);
+    setContent(contentMap[newPage as keyof typeof contentMap].content);
+    setUrl(contentMap[newPage as keyof typeof contentMap].url);
+    setChildren(contentMap[newPage as keyof typeof contentMap].children);
+  }
+
   return (
     <>
-      <Header />
       <section
-        id="home"
-        className={'bg-bgColor flex min-h-screen flex-col items-left justify-center p-8 md:p-24 w-full md:w-8/12'}
+        className={'bg-bgColor min-h-screen p-8 md:p-24 w-10/12 mt-16'}
       >
-        <div className="">
-          <div className="flex items-center justify-center mb-8">
-            <Image
-              src="./portfoliosean.png"
-              alt="portfoliosean"
-              width={300}
-              height={225}
-              className="w-32 h-auto rounded-full border-2 md:w-48 md:h-auto"
-            />
+        <div className="flex-row md:flex items-start">
+            <FS changePage={changePage}/>
+            <MDEditor url={url} content={content} children={children}>
+            </MDEditor>
           </div>
-          <Contacts />
-          <div className="mb-2">
-            <h1 className="text-slate-500 text-2xl font-bold md:text-3xl">
-              Sean Kim
-            </h1>
-            <h6 className="text-slate-500 text-lg md:text-xl">
-              Rutgers University - New Brunswick, 2026
-            </h6>
-          </div>
-        </div>
-        <div className="mb-2">
-          <p className="pl-4 text-slate-500 text-sm md:text-base mb-2">
-            Hi, my name is Sean! I&apos;m 20 years old and pursuing a bachelor&apos;s in
-            computer science at Rutgers University. <br />
-
-            I have experience in full-stack web development, data science, and machine/deep learning. <br />
-
-            My 2024 research objectives include natural language
-            processing and compiler design. <br /><br />
-
-            If you&apos;re a recruiter, hi! I&apos;m open to internship
-            positions. Feel free to take a look at my resume and contact me.<br />
-            
-            If you&apos;re a student, hi! I&apos;m open for collaboration,
-            or just to chat.
-          </p>
-        </div>
       </section>
     </>
   );

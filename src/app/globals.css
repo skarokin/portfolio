@@ -4,10 +4,39 @@
 
 @layer base {
   body {
-    @apply bg-bgColor text-slate-50 min-h-screen grid place-items-center px-4 tracking-wider font-mono;
+    @apply bg-bgColor min-h-screen grid place-items-center px-4 tracking-wider font-mono;
   }
 }
 
 html {
   overflow-y: scroll;
+}
+
+h1 {
+  @apply text-2xl font-bold text-slate-400;
+}
+
+h3 {
+  @apply text-xl font-bold text-slate-400;
+
+}
+
+h5 {
+  @apply text-lg text-slate-400;
+}
+
+.md-editor ul {
+  @apply list-disc pl-6 text-slate-400;
+}
+
+.md-editor p {
+  @apply text-slate-400;
+}
+
+.md-editor a {
+  @apply text-mainColor transition-colors duration-300 hover:underline;
+}
+
+.md-editor hr {
+  @apply my-2
 }
