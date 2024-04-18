@@ -29,7 +29,8 @@ export default function Home() {
       >
         <div className="flex-row md:flex items-start">
             <FS changePage={changePage}/>
-            <MDEditor url={url} content={content} children={children}>
+            <MDEditor url={url} content={content}>
+              {children}
             </MDEditor>
           </div>
       </section>
