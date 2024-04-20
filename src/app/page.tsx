@@ -1,12 +1,15 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { useState } from 'react';
+import { useState, ReactNode } from 'react';
 import contentMap from './contentMap';
-import { ReactNode } from 'react';
 
 const MDEditor = dynamic(() => import('./md-editor'), { ssr: false });
 const FS = dynamic(() => import('./fs'), { ssr: false });
+
+const Background: React.FC<{ children: ReactNode }> = ({ children }) => {
+  return <div className="background">{children}</div>;
+};
 
 export default function Home() {
 
@@ -24,16 +27,16 @@ export default function Home() {
 
   return (
     <>
-      <section
-        className={'bg-bgColor min-h-screen p-8 md:p-24 w-10/12 mt-16'}
-      >
-        <div className="flex-row md:flex items-start">
+      <Background>
+        <section className={'min-h-screen p-8 md:p-24 w-10/12 mt-16'}>
+          <div className="flex-row md:flex items-start w-full">
             <FS changePage={changePage}/>
             <MDEditor url={url} content={content}>
               {children}
             </MDEditor>
           </div>
-      </section>
+        </section>
+      </Background>
     </>
   );
 }

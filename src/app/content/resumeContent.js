@@ -24,7 +24,7 @@ const resumeContent = "(interested? download the [pdf version](https://docs.goog
 "&nbsp;\n"+
 "# PROJECTS\n"+
 "---\n"+
-"### [reftype](https://github.com/skarokin/ref-type)\n"+
+"### [ref:type](https://github.com/skarokin/ref-type)\n"+
 "TypeScript, React, Node, Express, Google Cloud Platform\n"+
 "- Built a competitive typing game with React, deployed on Firebase Hosting.\n"+
 "- Increased average typing speed of 120 users to over 100 WPM during a two week testing period.\n"+
