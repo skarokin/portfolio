@@ -25,7 +25,7 @@ function MDEditor({
     content = content.replace(/(?:\r\n|\r|\n)/g, '\n\n')
 
     return (
-        <div className="md-editor bg-bgColor border-2 rounded py-2 px-4 border-slate-700 break-words w-full">
+        <div className="md-editor bg-bgColor border-2 rounded py-2 px-4 border-slate-700 break-words overflow-hidden w-full">
             <div className="font-mono flex flex-row justify-between mb-4">
                 <div className="text-slate-300">
                 <span>sean_kim</span>
