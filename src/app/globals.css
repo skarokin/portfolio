@@ -56,7 +56,9 @@ h5 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle, #3c3c50 1px, transparent 1px);
-  background-size: 28px 28px;
+  background-color: #242933;
+  opacity: 1;
+  background-image: radial-gradient(#534073 1.05px, #242933 1.05px);
+  background-size: 21px 21px;
   z-index: -1;
 }

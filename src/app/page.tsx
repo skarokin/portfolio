@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       <Background>
-        <section className={'min-h-screen p-8 md:p-24 w-10/12 mt-16'}>
+        <section className={'min-h-screen p-8 md:p-24 w-10/12'}>
           <div className="flex-row md:flex items-start w-full">
             <FS changePage={changePage}/>
             <MDEditor url={url} content={content}>
