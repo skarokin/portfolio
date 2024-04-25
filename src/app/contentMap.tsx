@@ -1,127 +1,76 @@
-import readMeContent from './content/readMeContent';
-import aboutContent from './content/aboutContent';
-import resumeContent from './content/resumeContent';
-import linearRegressionContent from './content/linearRegressionContent';
-import MYnotemdContent from './content/MYnotemdContent';
-import reftypeContent from './content/reftypeContent';
-import pycaptchaContent from './content/pycaptchaContent';
-import depparseGrammarContent from './content/depparseGrammarContent';
-import Image from 'next/image';
-import Contacts from './contacts';
+import readMeContent from './content/readMeContent.mdx';
+import aboutContent from './content/aboutContent.mdx';
+import resumeContent from './content/resumeContent.mdx';
+import linearRegressionContent from './content/linearRegressionContent.mdx';
+import MYnotemdContent from './content/MYnotemdContent.mdx';
+import reftypeContent from './content/reftypeContent.mdx';
+import pycaptchaContent from './content/pycaptchaContent.mdx';
+import depparseGrammarContent from './content/depparseGrammarContent.mdx';
 
-const LinearRegressionImage = () => (
-    <div className="flex flex-col items-center justify-center mb-8">
-        <Image
-            src="./carbon_linearregression.png"
-            alt="Linear Regression"
-            width={300}
-            height={225}
-            className="w-64 h-auto mb-4 md:w-96 md:h-auto"
-        />
-    </div>
-);
+const rawReadMeContentModule = require('!!raw-loader!./content/readMeContent.mdx');
+const rawReadMeContent = rawReadMeContentModule.default.replace(/import .*;\s*/g, '');
 
-const MYnotemdImage = () => (
-    <div className="flex flex-col items-center justify-center mb-8">
-        <Image
-            src="./carbon_mynotemd.png"
-            alt="MYnote"
-            width={300}
-            height={225}
-            className="w-64 h-auto mb-4 md:w-96 md:h-auto"
-        />
-    </div>
-);
+const rawAboutContentModule = require('!!raw-loader!./content/aboutContent.mdx');
+const rawAboutContent = rawAboutContentModule.default.replace(/import .*;\s*/g, '');
 
-const ReftypeImage = () => (
-    <div className="flex flex-col items-center justify-center mb-8">
-        <Image
-            src="./carbon_reftype.png"
-            alt="reftype"
-            width={300}
-            height={225}
-            className="w-64 h-auto mb-4 md:w-96 md:h-auto"
-        />
-    </div>
-);
+const rawResumeContentModule = require('!!raw-loader!./content/resumeContent.mdx');
+const rawResumeContent = rawResumeContentModule.default.replace(/import .*;\s*/g, '');
 
-const PycaptchaImage = () => (
-    <div className="flex flex-col items-center justify-center mb-8">
-        <Image
-            src="./carbon_pycaptcha.png"
-            alt="pycaptcha"
-            width={300}
-            height={225}
-            className="w-64 h-auto mb-4 md:w-96 md:h-auto"
-        />
-    </div>
-);
+const rawLinearRegressionContentModule = require('!!raw-loader!./content/linearRegressionContent.mdx');
+const rawLinearRegressionContent = rawLinearRegressionContentModule.default.replace(/import .*;\s*/g, '');
 
-const DepparseGrammarImage = () => (
-    <div className="flex flex-col items-center justify-center mb-8">
-        <Image
-            src="./carbon_pyesl.png"
-            alt="depparse-grammar"
-            width={300}
-            height={225}
-            className="w-64 h-auto mb-4 md:w-96 md:h-auto"
-        />
-    </div>
-);
+const rawMYnotemdContentModule = require('!!raw-loader!./content/MYnotemdContent.mdx');
+const rawMYnotemdContent = rawMYnotemdContentModule.default.replace(/import .*;\s*/g, '');
 
-const ImageAndContacts = () => (
-    <div className="flex flex-col items-center justify-center mb-8">
-        <Image
-            src="./portfoliosean.png"
-            alt="portfoliosean"
-            width={300}
-            height={225}
-            className="w-32 h-auto rounded-full border-2 md:w-48 md:h-auto"
-        />
-        <Contacts />
-    </div>
-);
+const rawReftypeContentModule = require('!!raw-loader!./content/reftypeContent.mdx');
+const rawReftypeContent = rawReftypeContentModule.default.replace(/import .*;\s*/g, '');
+
+const rawPycaptchaContentModule = require('!!raw-loader!./content/pycaptchaContent.mdx');
+const rawPycaptchaContent = rawPycaptchaContentModule.default.replace(/import .*;\s*/g, '');
+
+const rawDepparseGrammarContentModule = require('!!raw-loader!./content/depparseGrammarContent.mdx');
+const rawDepparseGrammarContent = rawDepparseGrammarContentModule.default.replace(/import .*;\s*/g, '');
 
 const contentMap = {
-    '/readme.md': {
+    '#readme.md': {
         content: readMeContent,
+        rawContent: rawReadMeContent,
         url: '/readme.md',
-        children: <ImageAndContacts key="imageAndContacts" />
     },
-    '/about.md': {
+    '#about.md': {
         content: aboutContent,
+        rawContent: rawAboutContent,
         url: '/about.md',
-        children: null
     },
-    '/resume.md': {
+    '#resume.md': {
         content: resumeContent,
+        rawContent: rawResumeContent,
         url: '/resume.md',
-        children: null
     },
-    '/projects/LinearRegression.md': {
+    '#projects/LinearRegression.md': {
         content: linearRegressionContent,
+        rawContent: rawLinearRegressionContent,
         url: '/projects/LinearRegression.md',
-        children: <LinearRegressionImage/>
     },
-    '/projects/MYnotemd.md': {
+    '#projects/MYnotemd.md': {
         content: MYnotemdContent,
+        rawContent: rawMYnotemdContent,
         url: '/projects/MYnotemd.md',
-        children: <MYnotemdImage/>
     },
-    '/projects/reftype.md': {
+    '#projects/reftype.md': {
         content: reftypeContent,
+        rawContent: rawReftypeContent,
         url: '/projects/reftype.md',
-        children: <ReftypeImage/>
     },
-    '/projects/pycaptcha.md': {
+    '#projects/pycaptcha.md': {
         content: pycaptchaContent,
+        rawContent: rawPycaptchaContent,
         url: '/projects/pycaptcha.md',
-        children: <PycaptchaImage/>
     },
-    '/projects/depparse-grammar.md': {
+    '#projects/depparse-grammar.md': {
         content: depparseGrammarContent,
+        rawContent: rawDepparseGrammarContent,
         url: '/projects/depparse-grammar.md',
-        children: <DepparseGrammarImage/>
     },
 };
 
