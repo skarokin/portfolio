@@ -15,8 +15,8 @@ export default function FS({
     const [isProjectsOpen, setIsProjectsOpen] = useState<boolean>(true);
 
     return (
-        <div className="whitespace-nowrap bg-bgColor/50 backdrop-blur-[2px] shadow-2xl min-h-fit mb-8 w-fit border-2 border-slate-700 rounded py-2 px-4 mr-4 font-mono text-slate-300">
-            <div onClick={() => setIsRootOpen(!isRootOpen)} className="flex flex-row items-center cursor-pointer">
+        <div className="whitespace-nowrap bg-bgColor/50 backdrop-blur-[2px] shadow-2xl min-h-fit mb-8 min-w-72 border-2 border-slate-700 rounded py-2 px-4 mr-4 font-mono text-slate-300">
+            <div onClick={() => setIsRootOpen(!isRootOpen)} className="items-center cursor-pointer">
                 <FontAwesomeIcon icon={isRootOpen ? faFolderOpen : faFolder} className="mr-2 w-4"/>
                 sean_kim
             </div>
@@ -28,7 +28,7 @@ export default function FS({
                         exit={{ opacity: 0, height: 0 }}
                         className="mt-2"
                     >
-                        <ul className="pl-4 text-sm md:text-base mb-2">
+                        <ul className="pl-4 text-sm lg:text-base mb-2">
                             <li>
                                 <div onClick={() => setIsProjectsOpen(!isProjectsOpen)} className="flex flex-row items-center cursor-pointer mb-2">
                                     <FontAwesomeIcon icon={isProjectsOpen ? faFolderOpen : faFolder} className="mr-2 w-4"/>
@@ -42,7 +42,7 @@ export default function FS({
                                             exit={{ opacity: 0, height: 0 }}
                                             className="mt-2"
                                         >
-                                            <ul className="pl-4 text-sm md:text-base mb-2">
+                                            <ul className="pl-4 text-sm lg:text-base mb-2">
                                                 <li className="cursor-pointer mb-2" onClick={() => changePage('/projects/LinearRegression.md')}>
                                                     <FontAwesomeIcon icon={farFile}/> LinearRegression.md
                                                 </li>
