@@ -29,18 +29,20 @@ function MDEditor({
                         : <span key={index}>{part}</span>
                 ))}
                 </div>
-                <div className="text-slate-300">
+                <div className="text-slate-300 flex">
                     <button 
                         onClick={() => setSourceMode(true)}
-                        className="transition-colors duration-300 ease-in-out hover:text-mainColor"
+                        className="flex flex-col mr-4 transition-colors duration-300 ease-in-out hover:text-mainColor"
                     >
                         <FontAwesomeIcon icon={faCode} />
-                    </button> {' '}
+                        <span>src</span>
+                    </button>
                     <button 
                         onClick={() => setSourceMode(false)}
-                        className="transition-colors duration-300 ease-in-out hover:text-mainColor"    
+                        className="flex flex-col items-cejnter transition-colors duration-300 ease-in-out hover:text-mainColor"    
                     >
                         <FontAwesomeIcon icon={faBookOpen} />
+                        <span>read</span> 
                     </button>
                 </div>
             </div>

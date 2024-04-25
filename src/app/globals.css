@@ -37,10 +37,6 @@ h5 {
   @apply text-mainColor transition-colors duration-300 hover:underline;
 }
 
-.md-editor hr {
-  @apply my-2
-}
-
 .background {
   display: flex;
   justify-content: center;
