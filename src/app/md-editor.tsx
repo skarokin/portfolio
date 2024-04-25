@@ -5,27 +5,21 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode } from '@fortawesome/free-solid-svg-icons/faCode';
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons/faBookOpen';
-import ReactDOMServer from 'react-dom/server';
-import ReactMarkdown from 'react-markdown';
 
 function MDEditor({
     url,
     content,
-    children,
+    rawContent
 } : {
     url : string,
-    content: string,
-    children?: React.ReactNode
+    content: React.ElementType,
+    rawContent: string,
 }) {
+
     const [sourceMode, setSourceMode] = useState<boolean>(false);
-    // render \n as <br> (to ensure line breaks in source mode)
-    // replace &emsp; with &amp;&emsp; (to prevent html from rendering) 
-    const mdContent = content.replace(/(?:\r\n|\r|\n)/g, '<br>').replace(/&/g, '&amp;');
-    // ensure line breaks with single \n
-    content = content.replace(/(?:\r\n|\r|\n)/g, '\n\n')
 
     return (
-        <div className="md-editor bg-bgColor/50 border-2 rounded py-2 px-4 border-slate-700 break-words overflow-hidden w-full backdrop-blur-[2px] shadow-2xl">
+        <div className="md-editor bg-bgColor/50 border-2 rounded py-2 px-4 border-slate-700 break-words w-full backdrop-blur-[2px] shadow-2xl">
             <div className="font-mono flex flex-row justify-between mb-4">
                 <div className="text-slate-300">
                 <span>sean_kim</span>
@@ -50,9 +44,8 @@ function MDEditor({
                     </button>
                 </div>
             </div>
-            {sourceMode ? <div className="font-mono text-slate-300">{ReactDOMServer.renderToStaticMarkup(children)}</div> : children}
-            <div className={`text-slate-300 ${sourceMode ? 'font-mono text-slate-300' : ''}`}>
-                {sourceMode ? <span dangerouslySetInnerHTML={{ __html: mdContent }} /> : <ReactMarkdown>{content}</ReactMarkdown>}
+            <div className='text-slate-300'>
+                {sourceMode ? <pre className="break-words whitespace-pre-wrap">{rawContent}</pre> : React.createElement(content)}
             </div>
         </div>
     )

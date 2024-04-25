@@ -7,10 +7,15 @@ import { faFolder, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 import { faFile as farFile } from '@fortawesome/free-regular-svg-icons';
 
 export default function FS({
-    changePage
+    // changePage
 } : {
-    changePage: (newPage: string) => void;
+    // changePage: (newPage: string) => void;
 }) {
+
+    const changePage = (newPage: string) => {
+        window.location.hash = newPage.startsWith('/') ? newPage.substring(1) : newPage;
+    };
+    
     const [isRootOpen, setIsRootOpen] = useState<boolean>(true);
     const [isProjectsOpen, setIsProjectsOpen] = useState<boolean>(true);
 
