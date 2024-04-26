@@ -32,14 +32,14 @@ function MDEditor({
                 <div className="text-slate-300 flex">
                     <button 
                         onClick={() => setSourceMode(true)}
-                        className="flex flex-col mr-4 transition-colors duration-300 ease-in-out hover:text-mainColor"
+                        className="flex flex-col items-center mr-4 transition-colors duration-300 ease-in-out hover:text-mainColor"
                     >
                         <FontAwesomeIcon icon={faCode} />
                         <span className="text-sm">src</span>
                     </button>
                     <button 
                         onClick={() => setSourceMode(false)}
-                        className="flex flex-col items-cejnter transition-colors duration-300 ease-in-out hover:text-mainColor"    
+                        className="flex flex-col items-center transition-colors duration-300 ease-in-out hover:text-mainColor"    
                     >
                         <FontAwesomeIcon icon={faBookOpen} />
                         <span className="text-sm">read</span> 
