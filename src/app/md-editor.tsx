@@ -35,14 +35,14 @@ function MDEditor({
                         className="flex flex-col mr-4 transition-colors duration-300 ease-in-out hover:text-mainColor"
                     >
                         <FontAwesomeIcon icon={faCode} />
-                        <span>src</span>
+                        <span className="text-sm">src</span>
                     </button>
                     <button 
                         onClick={() => setSourceMode(false)}
                         className="flex flex-col items-cejnter transition-colors duration-300 ease-in-out hover:text-mainColor"    
                     >
                         <FontAwesomeIcon icon={faBookOpen} />
-                        <span>read</span> 
+                        <span className="text-sm">read</span> 
                     </button>
                 </div>
             </div>
