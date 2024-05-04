@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <>
       <Background>
-        <section className={'min-h-screen p-8 lg:p-24 w-full'}>
+        <section className='min-h-screen p-8 lg:p-24 w-full'>
           <div className="flex flex-col lg:flex-row items-start">
             <FS />
             <MDEditor url={url} content={content} rawContent={rawContent}/>
