@@ -6,11 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFolder, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 import { faFile as farFile } from '@fortawesome/free-regular-svg-icons';
 
-export default function FS({
-    // changePage
-} : {
-    // changePage: (newPage: string) => void;
-}) {
+export default function FS() {
 
     const changePage = (newPage: string) => {
         window.location.hash = newPage.startsWith('/') ? newPage.substring(1) : newPage;

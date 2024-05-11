@@ -11,7 +11,17 @@ import Image from 'next/image';
 </div>
 
 # [depparse-grammar](https://github.com/skarokin/depparse-grammar)
-### Python, spaCy, Firebase, React
+### Python, spaCy, React, Firebase
 - A customizable grammar checker that combines a dependency parser with rule-based systems.
-- Utilizes spaCy training pipelines to support multiple languages and custom grammar rules.
+- Leverages spaCy training pipelines to support multiple languages and custom grammar rules.
 - Inspired by [this](https://mmozgovoy.dev/papers/mozgovoy11b.pdf) research paper.
+<br/>
+### Blog
+- Started out as random research on HMMs, which led me to HMMs for POS tagging.
+- Came up with an idea to use an HMM for grammar checking, realized there was a major flaw in my plan.
+- Discovery of major flaw led me to find out about dependency parsers. Did a whole bunch of research on them and wanted to make one from scratch.
+- Decided to use an existing one for grammar checking. Played around with spaCy's dependency parser and realized it was bad at ungrammatical sentences.
+- Found the research paper linked above, got in touch with the researcher and got a lot of helpful insight.
+- Got OntoNotes 5.0 corpus but realized it was in PTB not CoNLL-U.
+- Spent 2 weeks trying to get an old PTB to CoNLL-U script working then found out that Stanford had an actively maintained converter...
+- Finally converted! But it took forever lol... realized that when converting CoNLL-U to spaCy binary I should definitely multithread (this was pretty simple since it was just a list of command line scripts). 
