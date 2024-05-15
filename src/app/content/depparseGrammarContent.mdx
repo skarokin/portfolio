@@ -30,3 +30,5 @@ dependency parser and realized it made wrong predictions on ungrammatical senten
 spaCy to generate the UD POS tag of the word. This capability to generate different forms of a word serves as the basis for the augmentor.
 - Augmented the dataset by replacing adverbs with adjectives (and vice versa) and injecting all kinds of wrong verb forms
     - The pretrained model was already capable of SVA, auxiliary verbs, and some other grammar errors so they did not need to be introduced.
+    - Implemented multithreading and multiprocessing; augmenting speed reduced from 220s to 90s for the entire OntoNotes 5.0 dataset
+        - NLTK's wordnet is not thread-safe, so I had to do a little modification to the tool above. My fork for this is [here](https://github.com/skarokin/word_forms_threadsafe)
